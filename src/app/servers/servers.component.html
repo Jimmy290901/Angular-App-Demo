@@ -1,0 +1,5 @@
+<button class="btn-primary btn" (click)="onColorClick('yellow')">Yellow</button>
+<br><br>
+<button class="btn btn-primary" (click)="onColorClick('magenta')">Magenta</button>
+<br><br>
+<app-server *ngFor="let element of elements" [element]="element" [color]="color"></app-server>
